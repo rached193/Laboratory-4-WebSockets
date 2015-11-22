@@ -12,7 +12,7 @@ Marcos Canales Mayo | 467716
 Jorge Cáncer Gil | 646122 | [My repo](https://github.com/jorcox/Laboratory-4-WebSockets) | [![Build Status](https://travis-ci.org/jorcox/Laboratory-4-WebSockets.svg?branch=master)](https://travis-ci.org/jorcox/Laboratory-4-WebSockets) 
 Iñigo Alonso Ruiz | 665959 | [repo](https://github.com/Shathe/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/Shathe/Laboratory-4-WebSockets.svg)](https://travis-ci.org/Shathe/Laboratory-4-WebSockets) 
 Ismael Rodríguez Hernández | 587429 | [repo](https://github.com/ismaro3/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/ismaro3/Laboratory-4-WebSockets.svg)](https://travis-ci.org/ismaro3/Laboratory-4-WebSockets) | Create a HTML+JS client
-Jorge Martinez Lascorz | 571735 | [repo](https://github.com/JorgeCoke/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/JorgeCoke/Laboratory-4-WebSockets.svg)](https://travis-ci.org/JorgeCoke/Laboratory-4-WebSockets) | Create mobile client with Ionic web technologie
+Jorge Martinez Lascorz | 571735 | [repo](https://github.com/JorgeCoke/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/JorgeCoke/Laboratory-4-WebSockets.svg?branch=master)](https://travis-ci.org/JorgeCoke/Laboratory-4-WebSockets) | Create mobile client with Ionic web technology
 David Nicuesa Aranda | 653224
 Eduardo Ibanez | 528074
 Sergio Soro Miranda | 671250 | [repo](https://github.com/teruyi/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/teruyi/Laboratory-4-WebSockets.svg)](https://travis-ci.org/teruyi/Laboratory-4-WebSockets)
