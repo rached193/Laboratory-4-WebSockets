@@ -17,8 +17,8 @@ David Nicuesa Aranda | 653224 | [repo](https://github.com/Nicu1309/Laboratory-4-
 Eduardo Ibanez | 528074 | [repo](https://github.com/EduIbanez/Laboratory-4-WebSockets) | [![Build Status](https://travis-ci.org/EduIbanez/Laboratory-4-WebSockets.svg?branch=master)](https://travis-ci.org/EduIbanez/Laboratory-4-WebSockets) 
 Sergio Soro Miranda | 671250 | [repo](https://github.com/teruyi/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/teruyi/Laboratory-4-WebSockets.svg)](https://travis-ci.org/teruyi/Laboratory-4-WebSockets)
 Alberto Álvarez Aldea | 681687 | [repo](https://github.com/albert17/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/albert17/Laboratory-4-WebSockets.svg)](https://travis-ci.org/albert17/Laboratory-4-WebSockets) | Transform into a Spring Boot Application
-Oscar Clemente Pedrico | 530162 | [repo](https://github.com/OscarClemente/Laboratory-4-WebSockets) | [![Build Status](https://travis-ci.org/OscarClemente/Laboratory-4-WebSockets.svg?branch=master)](https://travis-ci.org/OscarClemente/Laboratory-4-WebSockets)
-Iñigo Gascón Royo | 685215
+Oscar Clemente Pedrico | 530162 | [repo](https://github.com/OscarClemente/Laboratory-4-WebSockets) | [![Build Status](https://travis-ci.org/OscarClemente/Laboratory-4-WebSockets.svg?branch=master)](https://travis-ci.org/OscarClemente/Laboratory-4-WebSockets) 
+Iñigo Gascón Royo | 685215 | [repo](https://github.com/Gascon95/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/Gascon95/Laboratory-4-WebSockets.svg)](https://travis-ci.org/Gascon95/Laboratory-4-WebSockets)
 Adrian Susinos Moreno | 650220 | [repo](https://github.com/ader9/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/ader9/Laboratory-4-WebSockets.svg)](https://travis-ci.org/ader9/Laboratory-4-WebSockets)
 Santiago Gil Begué | 683482 | [Santi-7's repo](https://github.com/Santi-7/Laboratory-4-WebSockets) | [![Build Status](https://travis-ci.org/Santi-7/Laboratory-4-WebSocketss.svg?branch=master)](https://travis-ci.org/Santi-7/Laboratory-4-WebSockets) | Subprotocol to send data
 Carlos Escuín Blasco | 545003 | [repo](https://github.com/xarlieskin/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/xarlieskin/Laboratory-4-WebSockets.svg)](https://travis-ci.org/xarlieskin/Laboratory-4-WebSockets)
@@ -27,7 +27,7 @@ Raul Piracés Alastuey | 490790 | [repo](https://github.com/piraces/Laboratory-4
 Adrian Moreno Jimeno | 631537
 Alberto Sabater Bailón | 546297 | [repo](https://github.com/asabater94/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/asabater94/Laboratory-4-WebSockets.svg)](https://travis-ci.org/asabater94/Laboratory-4-WebSockets)
 Agustin Navarro Torres | 587570 | [repo](https://github.com/SirBargus/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/SirBargus/Laboratory-4-WebSockets.svg)](https://travis-ci.org/SirBargus/Laboratory-4-WebSockets) | Transform into a Node.js Application
-Alejandro Solanas Bonilla | 647647
+Alejandro Solanas Bonilla | 647647 | [repo](https://github.com/Naxsel/Laboratory-4-WebSockets)| [![Build Status](https://travis-ci.org/Naxsel/Laboratory-4-WebSockets.svg)](https://travis-ci.org/Naxsel/Laboratory-4-WebSockets)
 Christian García Artero | 597578 | [repo] (https://github.com/christianjaka94/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/christianjaka94/Laboratory-4-WebSockets.svg?branch=master)](https://travis-ci.org/christianjaka94/Laboratory-4-WebSockets)
 Luis Jesus Pellicer | 520256 | [repo](https://github.com/luisjesuspellicer/Laboratory-4-WebSockets) |[![Build Status](https://travis-ci.org/luisjesuspellicer/Laboratory-4-WebSockets.svg)](https://travis-ci.org/luisjesuspellicer/Laboratory-4-WebSockets)
 Marcos Ruiz García | 648045
