@@ -1,6 +1,7 @@
 package websockets;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -62,9 +63,8 @@ public class ElizaServerTest {
 	}
 
 	@Test(timeout = 1000)
-	@Ignore
 	public void onChat() throws DeploymentException, IOException, URISyntaxException, InterruptedException {
-		// COMPLETE
+		CountDownLatch latch = new CountDownLatch(5);
 		List<String> list = new ArrayList<>();
 		ClientEndpointConfig configuration = ClientEndpointConfig.Builder.create().build();
 		ClientManager client = ClientManager.createClient();
@@ -73,22 +73,29 @@ public class ElizaServerTest {
 			@Override
 			public void onOpen(Session session, EndpointConfig config) {
 
-				// COMPLETE
+				session.getAsyncRemote().sendText("I really need to sleep more and have a nice beer-dream");
 
 				session.addMessageHandler(new MessageHandler.Whole<String>() {
 
 					@Override
 					public void onMessage(String message) {
 						list.add(message);
-						// COMPLETE
+						latch.countDown();
 					}
 				});
 			}
 
 		}, configuration, new URI("ws://localhost:8025/websockets/eliza"));
-		// COMPLETE
-		// COMPLETE
-		// COMPLETE
+		latch.await();
+		assertEquals(5, list.size());
+
+		//response copied from Eliza.java
+		String[] response =  { "What does that dream suggest to you?", "Do you dream often?",
+				"What persons appear in your dreams?", "Are you disturbed by your dreams?" };
+
+		assertTrue(response[0].equals(list.get(3)) || response[1].equals(list.get(3)) || response[2].equals(list.get(3))
+				|| response[3].equals(list.get(3)));
+
 	}
 
 	@After
