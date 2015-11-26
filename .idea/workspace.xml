@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62249cba-85c7-4456-8488-3b65a5a43cde" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/websockets/ElizaServerTest.java" afterPath="$PROJECT_DIR$/src/test/java/websockets/ElizaServerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="Laboratory-4-WebSockets.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -620,12 +620,12 @@
       <created>1448507069918</created>
       <option name="number" value="Default" />
       <updated>1448507069918</updated>
-      <workItem from="1448507071372" duration="2896000" />
+      <workItem from="1448507071372" duration="2962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2896000" />
+    <option name="totallyTimeSpent" value="2962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
