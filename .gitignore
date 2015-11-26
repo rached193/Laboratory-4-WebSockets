@@ -16,4 +16,8 @@ hs_err_pid*
 .project
 .settings
 .gradle
-.idea
+
+#IntelliJ
+/.idea/
+*.iml
+>>>>>>> upstream/control
