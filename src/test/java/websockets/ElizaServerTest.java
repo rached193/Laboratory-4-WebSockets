@@ -2,8 +2,6 @@ package websockets;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -31,19 +29,19 @@ import websockets.web.ElizaServerEndpoint;
 public class ElizaServerTest {
 
 	private Server server;
-	
+
 	@Before
 	public void setup() throws DeploymentException {
-        server = new Server("localhost", 8025, "/websockets", new HashMap<String,Object>(), ElizaServerEndpoint.class);
+		server = new Server("localhost", 8025, "/websockets", new HashMap<String, Object>(), ElizaServerEndpoint.class);
 		server.start();
 	}
-	
-	@Test(timeout=1000)
+
+	@Test(timeout = 1000)
 	public void onOpen() throws DeploymentException, IOException, URISyntaxException, InterruptedException {
 		CountDownLatch latch = new CountDownLatch(3);
 		List<String> list = new ArrayList<>();
 		ClientEndpointConfig configuration = ClientEndpointConfig.Builder.create().build();
-		ClientManager client = ClientManager.createClient();	
+		ClientManager client = ClientManager.createClient();
 		client.connectToServer(new Endpoint() {
 
 			@Override
@@ -53,48 +51,53 @@ public class ElizaServerTest {
 					@Override
 					public void onMessage(String message) {
 						list.add(message);
-                        latch.countDown();
+						latch.countDown();
 					}
 				});
 			}
-			
+
 		}, configuration, new URI("ws://localhost:8025/websockets/eliza"));
 		latch.await();
 		assertEquals(3, list.size());
 		assertEquals("The doctor is in.", list.get(0));
 	}
-	
-	@Test(timeout=1000)
-	@Ignore
+
+	@Test(timeout = 1000)
 	public void onChat() throws DeploymentException, IOException, URISyntaxException, InterruptedException {
-		// COMPLETE
+		CountDownLatch latch = new CountDownLatch(5);
 		List<String> list = new ArrayList<>();
 		ClientEndpointConfig configuration = ClientEndpointConfig.Builder.create().build();
-		ClientManager client = ClientManager.createClient();	
+		ClientManager client = ClientManager.createClient();
 		client.connectToServer(new Endpoint() {
 
 			@Override
 			public void onOpen(Session session, EndpointConfig config) {
-				
-				// COMPLETE
-				
+
+				session.getAsyncRemote().sendText("I really need to sleep more and have a nice beer-dream");
+
 				session.addMessageHandler(new MessageHandler.Whole<String>() {
 
 					@Override
 					public void onMessage(String message) {
 						list.add(message);
-                        // COMPLETE
+						latch.countDown();
 					}
 				});
 			}
-			
+
 		}, configuration, new URI("ws://localhost:8025/websockets/eliza"));
-		// COMPLETE
-		// COMPLETE
-		// COMPLETE
+		latch.await();
+		assertEquals(5, list.size());
+
+		//response copied from Eliza.java
+		String[] response =  { "What does that dream suggest to you?", "Do you dream often?",
+				"What persons appear in your dreams?", "Are you disturbed by your dreams?" };
+
+		assertTrue(response[0].equals(list.get(3)) || response[1].equals(list.get(3)) || response[2].equals(list.get(3))
+				|| response[3].equals(list.get(3)));
+
 	}
 
-	
 	@After
 	public void close() {
 		server.stop();
