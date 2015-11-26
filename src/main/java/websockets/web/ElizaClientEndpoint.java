@@ -23,7 +23,7 @@ import websockets.ElizaClient;
 public class ElizaClientEndpoint {
 
 	private TextDevice con = TextDevices.defaultTextDevice();
-	
+
 	private static final Logger LOGGER = Grizzly.logger(ElizaClientEndpoint.class);
 
 	@OnOpen
